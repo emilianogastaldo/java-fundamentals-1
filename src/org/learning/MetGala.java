@@ -20,7 +20,7 @@ public class MetGala {
         String nomeOspite = scanner.nextLine();
         String messaggio = "Mi dispiace non puoi entrare";
         for (int i = 0; i < listaInvitati.length ; i++) {
-            if(nomeOspite.equals(listaInvitati[i])){
+            if(nomeOspite.equalsIgnoreCase(listaInvitati[i])){
                 messaggio ="Buona sera, può entrare";
             }
         }
