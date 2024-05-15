@@ -31,7 +31,7 @@ public class BonusStringa {
             //Se c'è il carattere ricercato entro e aumento il flag della lunghezza
             if(carattere == sequenza.charAt(i)){
                 lunghezzaFlag++;
-                // Salvo la posizione nell'indiceFlag lo faccio ora
+                // Salvo la posizione nell'indiceFlag
                 if (indiceFlag == 0) indiceFlag = i;
                 // Controllo se la sequenza è più lunga o meno di quella salvata
                 if(lunghezzaFlag >= lunghezzaMax) {
@@ -39,7 +39,7 @@ public class BonusStringa {
                     indiceMax = indiceFlag;
                 }
             }
-            // Se il carattere è azzero tutto
+            // Se non c'è il carattere azzero tutto
             if(carattere != sequenza.charAt(i)){
                 indiceFlag = 0;
                 lunghezzaFlag = 0;
